@@ -74,3 +74,19 @@ box-shadow: 1px 5px 11px 0px rgba(34, 60, 80, 0.2);
 .ppp{
     list-style-type: disc;
 }
+.tt{
+    -webkit-box-shadow: 1px 35px 79px -1px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 1px 35px 79px -1px rgba(34, 60, 80, 0.2);
+box-shadow: 1px 35px 79px -1px rgba(34, 60, 80, 0.2);
+}
+.cc{
+    box-shadow: 4.479498863220215px 53.75398635864258px 26.87699317932129px 0px #E5E5E5B2;
+}
+.bb{
+    cursor: pointer;
+}
+.bb:hover{
+    -webkit-box-shadow: 1px 16px 42px -1px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 1px 16px 42px -1px rgba(34, 60, 80, 0.2);
+box-shadow: 1px 16px 42px -1px rgba(34, 60, 80, 0.2);
+}

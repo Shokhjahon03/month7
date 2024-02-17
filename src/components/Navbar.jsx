@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     let[burder,setBurger]=useState(false)
   return (
-    <nav className='pt-[33px] fixed top-0 left-0 w-full bg-white'>
+    <nav className='pt-[33px] fixed top-0 left-0 w-full bg-white z-20'>
      <div className="container">
         <div className='w-full flex items-center justify-between sm:justify-start sm:gap-[73.4px] md:gap-[103.12px] border-b pb-[30px]'>
             <img className='sm:w-[80px] sm:h-[30.09px]' src={logo} alt="alt" />
@@ -28,7 +28,7 @@ const Navbar = () => {
     </div> 
     <div className={burder?'plus sm:hidden p-3':'minus sm:hidden'}>
         <div className='flex flex-col gap-4 w-full'>
-        <NavLink className='hh flex w-full justify-between text-white border-b'>
+        <NavLink  className='hh flex w-full justify-between text-white border-b'>
             <p>Korzinka </p>
             <button className=''><i className='bx bx-cart text-white text-[25px]'></i></button>
         </NavLink>

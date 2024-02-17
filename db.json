@@ -1,0 +1,40 @@
+{
+    "foods":[
+        {
+            "id":1,
+            "foodimg":"food1",
+            "foodname":"Chicken Hell",
+            "time":"24",
+            "stars":"4.5",
+            "foodprice":"12",
+            "button":"H"
+        },
+        {
+            "id":2,
+            "foodimg":"food2",
+            "foodname":"Swe Dish",
+            "time":"34",
+            "stars":"4.9",
+            "foodprice":"19",
+            "button":"T"
+        },
+        {
+            "id":3,
+            "foodimg":"food3",
+            "foodname":"Swe Dish",
+            "time":"34",
+            "stars":"4.8",
+            "foodprice":"19",
+            "button":"S"
+        },
+        {
+            "id":4,
+            "foodimg":"food1",
+            "foodname":"Chicken Hell",
+            "time":"24",
+            "stars":"4.5",
+            "foodprice":"12",
+            "button":"H"
+        }
+    ]
+}
