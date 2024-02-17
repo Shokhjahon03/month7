@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePG from "./Pages/HomePG"
+import AllCardsPG from "./Pages/AllCardsPG"
 
 function App() {
  

@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import logo from '../assets/LLLL.svg'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Navigate } from 'react-router-dom'
 const Navbar = () => {
+    // let Fon=()=>{
+    //     <Navigate to="/dish" replace={true} />
+    // }
     let[burder,setBurger]=useState(false)
   return (
     <nav className='pt-[33px] fixed top-0 left-0 w-full bg-white z-20'>

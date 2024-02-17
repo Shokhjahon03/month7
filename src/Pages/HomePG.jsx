@@ -10,8 +10,11 @@ import img1 from '../assets/food1.svg'
 import img2 from '../assets/food2.svg'
 import food1 from '../assets/food1.svg'
 import { NavLink } from 'react-router-dom'
-
+import btn1 from '../assets/btn1.svg'
 // import BG from '../assets/BG.png'
+import divider from '../assets/divider.svg'
+import divider2 from '../assets/dvid2.svg'
+import btn2 from '../assets/s2.svg'
 const HomePG = () => {
   let [heart,setHeart]=useState(true)
   let {loading, foods, error,getFoods}=foodsapi()
@@ -161,51 +164,99 @@ All Great Over The World </p>
                 </div>
               </div>
           </section>
-          <section>
+          <section className='border-b pb-[105.68px]'>
             <div className="container">
                     <div className='w-full flex flex-wrap justify-between gap-y-[100.6px]'>
-                    <div className='flex flex-col items-start'>
-                        <p className='text-[#18181B] text-[30px] leading-[34.22px] font-bold mb-[26.54px]'>
+                    <div className='flex flex-col items-start lg:w-[570.71px]'>
+                        <p className='text-[#18181B] text-[30px] lg:text-[50.92px] lg:leading-[58.2px] leading-[34.22px] font-bold mb-[26.54px]'>
                         Control <span className='text-[#6C5FBC]'>Purchases</span> <br /> Via Dashboard
                         </p>
-                       <div iv className='w-[228px] flex flex-col gap-y-[9.94px] bb rounded-[7.95px] mb-[9.94px]'>
+                       <div iv className='w-[228px] lg:pb-[10.01px] lg:w-[345.17px] flex flex-col gap-y-[9.94px] bb rounded-[7.95px] mb-[9.94px]'>
                           <div className='flex gap-[28.03px]'>
-                            <div className='flex items-center w-[143.62px] justify-between pl-[11.27px]'>
-                              <img className='w-[51.03px] h-[52.89px]' src={food1} alt="alt" />
+                            <div className='flex items-center w-[143.62px]  justify-between pl-[11.27px] lg:w-[217px]'>
+                              <img className='w-[51.03px] h-[52.89px] lg:w-[77.26px] lg:h-[80.08px]' src={food1} alt="alt" />
                               <div>
-                                <p className='text-[12.59px] text-[#323142] font-semibold lean-[17.63px] mb-[2.55px]'>Chicken Hell</p>
-                                <p className='text-[7.95px] font-medium leading-[11.13px]'>On The Way</p>
+                                <p className='text-[12.59px] text-[#323142] font-semibold lg:text-[19.06px] lean-[17.63px] mb-[2.55px]'>Chicken Hell</p>
+                                <p className='text-[7.95px] font-medium leading-[11.13px] lg:text-[12.04px]'>On The Way</p>
                               </div>
                             </div>
-                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium '>3:09 PM</p></div>
+                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium lg:text-[13.04px] '>3:09 PM</p></div>
                           </div>
                         </div>
-                        <div iv className='w-[228px] flex flex-col gap-y-[9.94px] bb rounded-[7.95px] mb-[9.94px]'>
+                        <div iv className='w-[228px] lg:pb-[10.01px] lg:w-[345.17px]  flex flex-col gap-y-[9.94px] bb rounded-[7.95px] mb-[9.94px]'>
                           <div className='flex gap-[28.03px]'>
-                            <div className='flex items-center w-[143.62px] gap-x-[2.89px] pl-[11.27px]'>
-                              <img className='w-[51.03px] h-[52.89px]' src={food1} alt="alt" />
+                            <div className='flex items-center w-[143.62px]  gap-x-[2.89px] pl-[11.27px] lg:w-[217px]'>
+                              <img className='w-[51.03px] h-[52.89px] lg:w-[77.26px] lg:h-[80.08px]' src={food1} alt="alt" />
                               <div>
-                                <p className='text-[12.59px] text-[#323142] font-semibold lean-[17.63px] mb-[2.55px]'>Swe Dish</p>
-                                <p className='text-[7.95px] font-medium leading-[11.13px]'>Delivered</p>
+                                <p className='text-[12.59px] text-[#323142] font-semibold lg:text-[19.06px] lean-[17.63px] mb-[2.55px]'>Swe Dish</p>
+                                <p className='text-[7.95px] font-medium leading-[11.13px] lg:text-[12.04px]'>Delivered</p>
                               </div>
                             </div>
-                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium '>Yesterday</p></div>
+                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium  lg:text-[13.04px]'>Yesterday</p></div>
                           </div>
                         </div>
-                        <div iv className='w-[228px] flex flex-col gap-y-[9.94px] bb  rounded-[7.95px] mb-[9.94px]'>
+                        <div iv className='w-[228px] lg:pb-[10.01px] lg:w-[345.17px]  flex flex-col gap-y-[9.94px] bb  rounded-[7.95px] mb-[9.94px]'>
                           <div className='flex gap-[28.03px]'>
-                            <div className='flex items-center w-[143.62px] justify-between pl-[11.27px]'>
-                              <img className='w-[51.03px] h-[52.89px]' src={food1} alt="alt" />
+                            <div className='flex items-center w-[143.62px]  justify-between pl-[11.27px] lg:w-[217px]'>
+                              <img className='w-[51.03px] h-[52.89px] lg:w-[77.26px] lg:h-[80.08px]' src={food1} alt="alt" />
                               <div>
-                                <p className='text-[12.59px] text-[#323142] font-semibold lean-[17.63px] mb-[2.55px]'>Fish Hell Veg</p>
-                                <p className='text-[7.95px] font-medium leading-[11.13px] text-[#F1534E]'>Cancelled</p>
+                                <p className='text-[12.59px] text-[#323142] font-semibold lg:text-[19.06px] lean-[17.63px] mb-[2.55px]'>Fish Hell Veg</p>
+                                <p className='text-[7.95px] font-medium leading-[11.13px] text-[#F1534E] lg:text-[12.04px]'>Cancelled</p>
                               </div>
                             </div>
-                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium '>Yesterday</p></div>
+                            <div className='flex items-end'><p className='text-[8.62px] text-[#ACADB9] leading-[12.06px] font-medium  lg:text-[13.04px]'>Yesterday</p></div>
                           </div>
                         </div>
                     </div>
+                    <div className='aa md:w-[379.73px] lg:w-[534px] lg:h-[466.46px] w-full p-[22.33px] h-[331.71px] rounded-[17.87px] pt-[32.39px] flex flex-col items-center'>
+                        <div className='flex w-full justify-between  mb-[22.33px]'>
+                          <p className='text-[20.1px] leading-[27.14px] font-extrabold'>Purchases</p>
+                          <p className='flex items-center'>This month <i class='bx bx-chevron-down'></i></p>
+                        </div>
+                        <div className='w-full rounded-[11.16px] pb-[14.59px] border pt-[16.43px] items-center mb-[13.03px]'>
+                          <div className='flex items-center w-full pl-[14.89px] pr-[14.89px] mb-[13.64px] justify-between'>
+                            <div className='flex items-center'>
+                              <img className='w-[29.77px] h-[29.77px] mr-[11.16px]' src={btn1} alt="alt" />
+                              <div>
+                                <p className='text-[11.16px] leading-[16.75px] font-extrabold'>Expense</p>
+                                <p className='text-[9.3px] leading-[13.96px] font-medium text-[#A0AEC0]'>Increased By 10%</p>
+                              </div>
+                            </div>
+                            <p className='text-[13.03px] font-extrabold leading-[19.54px]'>$409.00</p>
+                          </div>
+                          <div className='w-full pl-[14.89px] pr-[14.89px]'>
+                            <img className='w-full' src={divider} alt="alt" />
+                          </div>
+                        </div>
+                        <div className='w-full rounded-[11.16px] pb-[14.59px] border pt-[16.43px] items-center'>
+                          <div className='flex items-center w-full pl-[14.89px] pr-[14.89px] mb-[13.64px] justify-between'>
+                            <div className='flex items-center'>
+                              <img className='w-[29.77px] h-[29.77px] mr-[11.16px]' src={btn2} alt="alt" />
+                              <div>
+                                <p className='text-[11.16px] leading-[16.75px] font-extrabold'>Vocher Usage</p>
+                                <p className='text-[9.3px] leading-[13.96px] font-medium text-[#A0AEC0]'>Increased By 5%</p>
+                              </div>
+                            </div>
+                            <p className='text-[13.03px] font-extrabold leading-[19.54px]'>$45.78</p>
+                          </div>
+                          <div className='w-full pl-[14.89px] pr-[14.89px]'>
+                            <img className='w-full' src={divider2} alt="alt" />
+                          </div>
+                        </div>
                     </div>
+                  </div>
+            </div>
+          </section>
+          <section className='mt-[57px]'>
+            <div className="container">
+              <div className='w-full flex flex-col items-center'>
+                        <h2 className=' text-center text-[30px] leading-[36px] font-semibold mb-[55px]'> <span className='text-[#6C5FBC]'>Customer</span> <br className='md:hidden' /> Say</h2>
+                        <div className='ll w-[314.59px] rounded-[10px] p-[22.64px]'>
+                          <div>
+
+                          </div>
+                        </div>
+              </div>
             </div>
           </section>
         </main>

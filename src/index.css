@@ -90,3 +90,11 @@ box-shadow: 1px 35px 79px -1px rgba(34, 60, 80, 0.2);
 -moz-box-shadow: 1px 16px 42px -1px rgba(34, 60, 80, 0.2);
 box-shadow: 1px 16px 42px -1px rgba(34, 60, 80, 0.2);
 }
+.aa{
+    -webkit-box-shadow: 1px 13px 39px -2px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 1px 13px 39px -2px rgba(34, 60, 80, 0.2);
+box-shadow: 1px 13px 39px -2px rgba(34, 60, 80, 0.2);
+}
+.ll{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
