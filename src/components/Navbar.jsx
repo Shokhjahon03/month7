@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/LLLL.svg'
 import { NavLink, Navigate } from 'react-router-dom'
-const Navbar = () => {
+const Navbar = ({x}) => {
     // let Fon=()=>{
     //     <Navigate to="/dish" replace={true} />
     // }
@@ -16,11 +16,11 @@ const Navbar = () => {
             </button>
             <div className='hidden  sm:flex justify-between items-center w-[1022px]'>
                 <ul className='flex w-[115.03px] justify-between lg:w-[162.49px]'>
-                    <NavLink className=' font-medium text-[12.68px] text-[#606060] hover:text-[#6C5FBC] lg:text-[17.83px]'>Home</NavLink>
-                    <NavLink className=' font-medium text-[12.68px] text-[#606060] hover:text-[#6C5FBC] lg:text-[17.83px]'>Dishes</NavLink>
+                    <NavLink to='/' replace={true} className=' font-medium text-[12.68px] text-[#606060] hover:text-[#6C5FBC] lg:text-[17.83px]'>Home</NavLink>
+                    <NavLink to='/dish' replace={true} className=' font-medium text-[12.68px] text-[#606060] hover:text-[#6C5FBC] lg:text-[17.83px]'>Dishes</NavLink>
                 </ul>
                 <div className='flex md:w-[208.74px] w-[200px] justify-between'>
-                    <button className=''><i className='bx bx-cart text-[#606060] text-[25px] hover:text-[#6C5FBC]'></i></button>
+                    <button className=' relative'><NavLink to='/kor' replace={true}><i className='bx bx-cart text-[#606060] text-[25px] hover:text-[#6C5FBC]'></i></NavLink><p className=' absolute w-[15px] top-[4px] rounded-full bg-[#6C5FBC] text-white text-[10px] right-[-10px]'>{x===0 ? null:x}</p></button>
                     <div className='flex justify-between w-[165.41px] '>
                     <button className='w-[73.03px] h-[45.36px] text-[12.68px] font-semibold rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Login</button>
                     <button className='pl-[15.02px] pr-[15.02px] text-[12.68px] font-semibold  w-[106.03px] h-[45.36px] rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Sigin Up</button>
