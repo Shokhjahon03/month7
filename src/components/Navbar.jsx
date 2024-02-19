@@ -22,8 +22,8 @@ const Navbar = ({x}) => {
                 <div className='flex md:w-[208.74px] w-[200px] justify-between'>
                     <button className=' relative'><NavLink to='/kor' replace={true}><i className='bx bx-cart text-[#606060] text-[25px] hover:text-[#6C5FBC]'></i></NavLink><p className=' absolute w-[15px] top-[4px] rounded-full bg-[#6C5FBC] text-white text-[10px] right-[-10px]'>{x===0 ? null:x}</p></button>
                     <div className='flex justify-between w-[165.41px] '>
-                    <button className='w-[73.03px] h-[45.36px] text-[12.68px] font-semibold rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Login</button>
-                    <button className='pl-[15.02px] pr-[15.02px] text-[12.68px] font-semibold  w-[106.03px] h-[45.36px] rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Sigin Up</button>
+                    <NavLink to='/log' replace={true}><button className='w-[73.03px] h-[45.36px] text-[12.68px] font-semibold rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Login</button></NavLink>
+                    <NavLink to='/sup' replace={true}><button className='pl-[15.02px] pr-[15.02px] text-[12.68px] font-semibold  w-[106.03px] h-[45.36px] rounded-[12.68px] text-[#606060] hover:bg-[#6C5FBC] hover:text-white'>Sigin Up</button></NavLink>
                     </div>
                 </div>
             </div>
@@ -31,20 +31,20 @@ const Navbar = ({x}) => {
     </div> 
     <div className={burder?'plus sm:hidden p-3':'minus sm:hidden'}>
         <div className='flex flex-col gap-4 w-full'>
-        <NavLink  className='hh flex w-full justify-between text-white border-b'>
+        <NavLink to='/kor' replace={true} className='hh flex w-full justify-between text-white border-b'>
             <p>Korzinka </p>
             <button className=''><i className='bx bx-cart text-white text-[25px]'></i></button>
         </NavLink>
-        <NavLink className='hh flex w-full justify-between text-white border-b'>
+        <NavLink to='/' replace={true} className='hh flex w-full justify-between text-white border-b'>
             <p>Home </p>
             <button className=''><i className='bx bx-home text-white text-[25px]'  ></i></button>
         </NavLink>
-        <NavLink className='hh flex w-full justify-between text-white border-b'>
+        <NavLink to='/dish' replace={true} className='hh flex w-full justify-between text-white border-b'>
             <p>Dishes </p>
             <button className=''><i className='bx bx-dish text-[25px]' ></i></button>
         </NavLink>
-        <button className='text-white bg-[#344e4e] h-[45px] rounded-lg hover:bg-gray-200 hover:text-blue-600'>Sigin Up</button>
-        <button className='text-white bg-[#344e4e] h-[45px] rounded-lg hover:bg-gray-200 hover:text-blue-600'>Login</button>
+        <NavLink to='/sup' replace={true} className='w-full'><button  className='text-white w-full bg-[#344e4e] h-[45px] rounded-lg hover:bg-gray-200 hover:text-blue-600'>Sigin Up</button></NavLink>
+        <NavLink to='/log' replace={true} className='w-full'><button className='text-white w-full bg-[#344e4e] h-[45px] rounded-lg hover:bg-gray-200 hover:text-blue-600'>Login</button></NavLink>
         </div>
     </div>
     </nav>

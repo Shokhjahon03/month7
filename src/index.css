@@ -30,6 +30,9 @@ body{
    overflow-x: hidden;
    background-color: #F9F9F9;
 }
+nav{
+    position: relative;
+}
 .container{
     max-width: 1288px;
     width: 100%;
@@ -43,6 +46,9 @@ a,.pp{
     font-family: 'inter';
 }
 .minus{
+    position: absolute;
+    top: 0;
+    left: 0;
 background-color: #6C5FBC;
 width: 20px;
 height: 20px;
@@ -51,10 +57,13 @@ transform: translateX(-200px);
 border-top-right-radius: 20px;
 }
 .plus{
+position: absolute;
 background-color:#6C5FBC;
 width: 200px;
 height: 20px; 
 transition: 0.3s; 
+top: 100px;
+left: 0;
 transform: translateX(0);
 height: 100vh;
 border-top-right-radius: 20px;
@@ -105,6 +114,6 @@ box-shadow: 1px 13px 39px -2px rgba(34, 60, 80, 0.2);
     background-position: center;
     background-repeat: no-repeat;
 }
-.kk{
+.kk:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }

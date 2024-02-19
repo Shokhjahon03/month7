@@ -21,7 +21,8 @@ import stars from '../assets/Stars.svg'
 import ddd from '../assets/divider12.svg'
 import Footer from '../components/Footer'
 
-const HomePG = () => {
+const HomePG = ({x,setX}) => {
+  let ii=JSON.parse(localStorage.getItem('val'))?JSON.parse(localStorage.getItem('val')):[]
   let [heart,setHeart]=useState(true)
   let {loading, foods, error,getFoods}=foodsapi()
   let func=(id)=>{
@@ -34,7 +35,11 @@ const HomePG = () => {
     let c45=foods.filter((e)=>e.id<id)
     setFouurs2(c45)
   }
- 
+  let korz=(id)=>{
+    setX(x+1)
+    let news=foods.filter((e)=>e.id===id)
+        localStorage.setItem('val',JSON.stringify([...ii,...news]))
+  }
   useEffect(()=>{
     getFoods()
     // func(5)
@@ -44,7 +49,7 @@ let fours=foods.slice(0,4)
 let  fours2=foods.slice(0,5)
   return (
     <>
-      <Navbar/>
+      <Navbar x={x}/>
         <header className='mt-[150px]'>
           <div className="container flex justify-center">
            <div className='flex w-full justify-between flex-col items-center sm:flex-row sm:items-start'>
@@ -171,7 +176,7 @@ All Great Over The World </p>
                               </div>
                               <div className='flex w-full justify-between items-center'>
                                 <p className=' leading-[26.39px] text-[16.96px] text-[#323142]'>${e.foodprice}.<span className='text-[#8E97A6] text-[12.3px] font-bold'>99</span></p>
-                                <button className='w-[28.67px] h-[28.67px] rounded-[5.84px] bg-[#323142] text-white'>+</button>
+                                <button  onClick={()=>korz(e.id)} className='w-[28.67px] h-[28.67px] rounded-[5.84px] bg-[#323142] text-white'>+</button>
                               </div>
                             </div>
                             <button className=' absolute top-0 right-0' onClick={()=>setHeart(!heart)}>{heart ? <i className='bx bx-heart' ></i>:<i className='bx bxs-heart' ></i>}</button>
@@ -199,7 +204,7 @@ All Great Over The World </p>
                               </div>
                               <div className='flex w-full justify-between items-center'>
                                 <p className=' leading-[26.39px] text-[16.96px] text-[#323142] lg:text-[18.81px]'>${e.foodprice}.<span className='text-[#8E97A6] text-[12.3px] font-bold'>99</span></p>
-                                <button className='w-[28.67px] lg:w-[43.83px] lg:h-[39.72px] lg:rounded-[8.93px] h-[28.67px] rounded-[5.84px] bg-[#323142] text-white'>+</button>
+                                <button  onClick={()=>korz(e.id)} className='w-[28.67px] lg:w-[43.83px] lg:h-[39.72px] lg:rounded-[8.93px] h-[28.67px] rounded-[5.84px] bg-[#323142] text-white'>+</button>
                               </div>
                             </div>
                             <button className=' absolute top-0 lg:text-[25px] lg:top-1 lg:right-2 right-0' onClick={()=>setHeart(!heart)}>{heart ? <i className='bx bx-heart' ></i>:<i className='bx bxs-heart' ></i>}</button>

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import food1 from '../assets/food1.svg'
-const Take = ({data,minus}) => {
+const Take = ({data,minus,setTotal,total}) => {
     let [n,setN]=useState(1)
+    let [alfa,setAlfa]=useState(0)
   return (
     <div>
        {
@@ -20,7 +21,11 @@ const Take = ({data,minus}) => {
                    <p className='text-[10.55px] leading-[14.78px] font-normal'>0{n}</p>
                    <button onClick={()=>setN(n+1)} className='w-[20.02px] h-[18.93px] bg-[#323142] rounded flex justify-center items-center text-white'>+</button>
                  </div>
-                 <p className='text-[9.57px] leading-[13.4px] font-semibold text-[#323142]'>${n*(Number(e.foodprice)+0.99)  }</p>
+                 <p className='text-[9.57px] leading-[13.4px] font-semibold text-[#323142]'>${n*(Number(e.foodprice)+0.99)}</p>
+                 {
+                  setTotal(n*(Number(e.foodprice)+0.99))
+                 }
+                 
                </div>
              </div>
         ))
