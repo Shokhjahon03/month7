@@ -3,7 +3,7 @@ import foodsapi from '../App/foods'
 import foods1 from '../assets/food1.svg'
 import img1 from '../assets/food1.svg'
 import star from '../assets/Star.svg'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 const ParamsPG = ({pram}) => {
   let navg=()=>useNavigate()
   let {loading, foods, error,getFoods,idfood,getidFood}=foodsapi()
@@ -46,12 +46,15 @@ const ParamsPG = ({pram}) => {
         ))
       }
       <div className='flex flex-col bg-'>
-      <button onClick={()=>navg('/dish')}>
+      {/* <button onClick={()=>navg('/dish')}>
         Go Dishish
-      </button>
-      <button onClick={()=>navg('/')}>
+      </button> */}
+      {/* <button onClick={()=>navg('/')}>
         Go Home
-      </button>
+      </button> */}
+      <NavLink to='/' replace={true}>
+        gohome
+      </NavLink>
       </div>
     </div>
   )

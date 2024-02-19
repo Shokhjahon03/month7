@@ -4,7 +4,7 @@ import vilp from '../assets/vilp.svg'
 import grup from '../assets/group.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
 
-const SiginUpPG = () => {
+const SiginUpPG = ({c,setC}) => {
   let [values,setValues]=useState({name:'',email:'',pasword:''})
   let navg=useNavigate()
   let [pas,setPas]=useState(true)
@@ -15,8 +15,9 @@ const SiginUpPG = () => {
   let Savedatas=()=>{
     if (values.name!=='' && values.email!=='' && values.pasword!=='') {
       localStorage.setItem('user',JSON.stringify(values))
+      setC(true)
       navg('/',{replace:true})
-      console.log('salom');
+      
     }
     console.log('salom');
   }
